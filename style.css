@@ -1,0 +1,116 @@
+/* Header and Navigation */
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255,255, 255 ,0.87);
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 5px #D9D3CB;
+
+}
+#logo{
+    height: 60px;
+    margin: 15px 50px;
+}
+#nav{
+    width: 400px;
+    margin: 23px;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+li{
+    display: inline-block;
+    right: 0;
+    padding: 15px;
+    color: #373938;
+}
+/* Footer */
+
+footer{
+    background-color: #D9D3CB;
+    padding: auto;
+    color: #373938;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+.footerList{
+    display: inline-block;
+    align-items: center;
+}
+
+
+body{
+    margin: 0px;
+}
+
+#me{
+    width: 560px;
+    float: right;
+    margin: 0px 100px;
+}
+/* About Me page */
+.aboutMEcontent{
+    width: 550px;
+    margin: 150px 100px;
+}
+#aboutMe{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #373938;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+h2{
+    color: #996C5A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.button{
+    background-color: #D9B7A7;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 32px;
+    border: none;
+    margin: 40px 0px;
+    border-radius: 4px;
+
+}
+.button:hover{
+    background-color: #C39079;
+}
+.factsPics{
+    width: 100px;
+    display: inline-block;
+
+}
+#puzzle{
+    width: 100px;
+    padding:0 0 30px 0;
+}
+#paint{
+    width: 80px;
+    padding:0px 0 30px 8px;
+}
+#hand{
+    width: 63px;
+    padding:0 17px;
+}
+.factsList{
+    display: inline-block;
+    width: 800px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #373938;
+    letter-spacing: 1px;
+    line-height: 26px;
+    padding: 0;
+}
+
+
