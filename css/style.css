@@ -1,0 +1,202 @@
+/* Header and Navigation */
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255,255, 255 ,0.87);
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 5px #D9D3CB;
+
+}
+#logo{
+    height: 60px;
+    margin: 15px 50px;
+}
+#nav{
+    width: 400px;
+    margin: 23px;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+li{
+    display: inline-block;
+    right: 0;
+    padding: 15px;
+    color: #373938;
+}
+body{
+    margin: 0px;}
+/* Footer */
+
+footer{
+    background-color: #D9D3CB;
+    padding: auto;
+    color: #373938;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+.footerList{
+    display: inline-block;
+    align-items: center;
+}
+
+#me{
+    width: 560px;
+    float: right;
+    margin: 0px 100px;
+}
+/* About Me page */
+.aboutMEcontent{
+    width: 550px;
+    margin: 150px 100px 0 ;
+}
+#aboutMe{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #373938;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+h2{
+    color: #996C5A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.button{
+    background-color: #996C5A;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 32px;
+    border: none;
+    margin: 40px 0px;
+    border-radius: 4px;
+
+}
+.button:hover{
+    background-color: #AD8A7B;
+}
+#puzzle{
+    width: 100px;
+    padding:20px 0 30px 0;
+}
+#paint{
+    width: 80px;
+    padding:5px 0 30px 3px;
+}
+#hand{
+    width: 58px;
+    padding:0 17px;
+}
+.factsGrid{
+    margin: 0px 0px 50px 100px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "factsHeader factsHeader"
+    "puzzleImg fact1"
+    "paintImg fact2"
+    "handImg fact3"; 
+}
+.factsHeader{
+    grid-area: factsHeader;
+}
+.puzzleImg{
+    grid-area: puzzleImg;
+}
+.fact1{
+    grid-area: fact1;
+}
+.paintImg{
+    grid-area: paintImg;
+}
+.fact2{
+    grid-area: fact2;
+}
+.handImg{
+    grid-area: handImg;
+}.fact3{
+    grid-area: fact3;
+}
+.facts{
+    font-size: 18px;
+    color: #373938;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 0;
+}
+
+/* Skills page */
+.mySkills{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.skillsflexContainer{
+    display: flex;
+    align-items: center ;    
+}
+.skill{
+    width: 33%;
+    padding: 0 30px;
+}
+h1{
+    font-family: 'Ramaraja', serif;
+    font-size: 40px;
+    color: #373938;
+    letter-spacing: 7px;
+}
+.skillSub{
+    text-align: center;
+}
+.skillsTitle{
+    text-align: center;
+}
+p{
+    font-size: 18px;
+    color: #373938;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-family: 'Raleway', sans-serif;
+}
+#ux{
+    width: 150px ;  
+    
+}
+#ui{
+    width: 150px;
+}
+#coding{
+    width: 150px;
+}
+.toolsflexContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+#tools{
+    height: 70px;
+}
+.skillButton{
+    background-color: #996C5A;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 32px;
+    border: none;
+    margin: 40px 0px;
+    border-radius: 4px;
+    
+}
+.skillButton:hover{
+    background-color: #AD8A7B;
+}
