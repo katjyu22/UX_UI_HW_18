@@ -264,3 +264,13 @@ p{
     text-align: left;
 }
 
+/* media query */
+@media only screen and (max-width:600){
+    .skillsflexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+    }
+}
