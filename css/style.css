@@ -1,23 +1,23 @@
 /* Header and Navigation */
-header{
-    height: 100px;
-    width: 100%;
-    background-color: rgba(255,255, 255 ,0.87);
-    position: fixed;
-    top: 0;
-    box-shadow: 0px 3px 5px #D9D3CB;
+header {
+        background-color: rgba(255,255, 255 ,0.87);
+        top: 0;
+        box-shadow: 0px 3px 5px #D9D3CB;
+        position: fixed;
+        width: 100%;
+      }
+   
 
-}
 #logo{
-    height: 60px;
-    margin: 15px 50px;
+    height: 55px;
+    margin: 21px 50px;
 }
 #nav{
-    width: 400px;
+    width: 450px;
     margin: 23px;
     float: right;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 li{
@@ -25,6 +25,10 @@ li{
     right: 0;
     padding: 15px;
     color: #373938;
+}
+a{  text-decoration: none;
+    color: #373938;
+
 }
 body{
     margin: 0px;}
@@ -44,19 +48,20 @@ footer{
     align-items: center;
 }
 
-#me{
-    width: 560px;
-    float: right;
-    margin: 0px 100px;
-}
 /* About Me page */
+#me{
+    width: 520px;
+    float: right;
+    margin: 50px 100px;
+}
+
 .aboutMEcontent{
     width: 550px;
     margin: 150px 100px 0 ;
 }
 #aboutMe{
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #373938;
     letter-spacing: 1px;
     line-height: 26px;
@@ -67,7 +72,7 @@ h2{
     font-size: 25px;
     letter-spacing: 3px;
 }
-.button{
+button{
     background-color: #996C5A;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -79,7 +84,7 @@ h2{
     border-radius: 4px;
 
 }
-.button:hover{
+button:hover{
     background-color: #AD8A7B;
 }
 #puzzle{
@@ -88,7 +93,7 @@ h2{
 }
 #paint{
     width: 80px;
-    padding:5px 0 30px 3px;
+    padding:5px 0 20px 3px;
 }
 #hand{
     width: 58px;
@@ -97,16 +102,17 @@ h2{
 .factsGrid{
     margin: 0px 0px 50px 100px;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 10% 80%;
     grid-auto-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "factsHeader factsHeader"
-    "puzzleImg fact1"
-    "paintImg fact2"
-    "handImg fact3"; 
+    "factsHeader factsHeader factsHeader"
+    "puzzleImg puzzleImg fact1"
+    "paintImg paintImg fact2"
+    "handImg handImg fact3"; 
 }
 .factsHeader{
     grid-area: factsHeader;
+    height: 50px;
 }
 .puzzleImg{
     grid-area: puzzleImg;
@@ -126,7 +132,7 @@ h2{
     grid-area: fact3;
 }
 .facts{
-    font-size: 18px;
+    font-size: 16px;
     color: #373938;
     letter-spacing: 1px;
     line-height: 26px;
@@ -134,26 +140,31 @@ h2{
     padding: 20px 0;
 }
 
-/* Skills page */
+/*--  My UX Skills section coded using CSS flex -- */
+
 .mySkills{
     margin-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
+
 .skillsflexContainer{
     display: flex;
-    align-items: center ;    
+    flex-direction: row;
+    justify-content: space-between;
 }
 .skill{
-    width: 33%;
+    width: 30%;
     padding: 0 30px;
 }
 h1{
     font-family: 'Ramaraja', serif;
     font-size: 40px;
     color: #373938;
-    letter-spacing: 7px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+    margin: 20px 0;
 }
 .skillSub{
     text-align: center;
@@ -162,41 +173,105 @@ h1{
     text-align: center;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     color: #373938;
     letter-spacing: 1px;
     line-height: 26px;
     font-family: 'Raleway', sans-serif;
 }
-#ux{
-    width: 150px ;  
-    
+
+.ux{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-#ui{
-    width: 150px;
+.ui{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-#coding{
-    width: 150px;
+.coding{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .toolsflexContainer{
     display: flex;
     justify-content: space-evenly;
 }
-#tools{
+.toolsflexContainer div{
+    text-align: center;
+}
+.tools{
     height: 70px;
 }
-.skillButton{
-    background-color: #996C5A;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding: 15px 32px;
-    border: none;
-    margin: 40px 0px;
-    border-radius: 4px;
-    
+.resumeButton{
+    text-align: center;  
+    margin-top: 50px; 
 }
-.skillButton:hover{
-    background-color: #AD8A7B;
+
+/* Home page */
+.intro{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.avatar{
+    width: 80px;
+}
+/* My Work Section Constructed using CSS Grid */
+.myWork{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "work1img  work2img "
+    "work1 work2";
+} 
+.work1img{
+    grid-area: work1img;
+}
+.work1{
+    grid-area: work1;
+}
+.work2img{
+    grid-area: work2img;
+
+}
+.work2{
+    grid-area: work2;
+}
+.habook{
+    height: 400px;
+    margin-left: 0;
+}
+.doe{
+    height: 400px;
+}
+.workGrid p{
+    text-align: left;
+}
+.workGrid h2{
+    text-align: left;
+}
+
+/* media query */
+@media only screen and (max-width:600){
+    .skillsflexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill{
+        width: 100%;
+    }
+    
 }
